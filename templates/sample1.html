@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample1</title>
+    <link rel="stylesheet" href="{% static 'CSS/sam.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/bootstrap.min.css' %}">
+
+
+</head>
+<body>
+        <nav class="navbar navbar-dark bg-dark">
+                
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                          <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="{% url 'page2' %}">Page2 <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="{% url 'myapp:page3' %}">Page1</a>
+                           
+                          </div>
+                        </div>
+                    
+              </nav>
+    <h1>Hello {{data}}</h1>
+    <a href="{% url 'page2' %}">move_to_sample2</a>
+    <br/>
+    <a href="{% url 'myapp:page3' %}">move_to_sample3</a>
+    <img src="{% static 'images/img.png' %}" alt="mage not displayed">
+    
+
+<script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sample2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div class="alert alert-primary" role="alert">
+                Welcome to {{info}}
+            </div>
+        <div class="alert alert-danger" role="alert">
+                    hello world
+            </div>
+        <div class="alert alert-warning" role="alert">
+                    REady to go for sample 1 <a href="{% url 'page1' %}" class="alert-link">Move To Sample1</a>. Give it a click if you like.
+                </div>
+        <div class="alert alert-success" role="alert">
+                A simple success alert with <a href="{% url 'myapp:page3' %}" class="alert-link">Move to page3</a>. Give it a click if you like.
+                </div>
+        <a class="btn btn-primary" href="{% url 'page1' %}" role="button">Page1</a>
+        <a href="{% url 'myapp:page3' %}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Page3</a>
+        
+</body>
+</html>
